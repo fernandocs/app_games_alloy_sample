@@ -1,0 +1,55 @@
+"Window" : {
+	titleid: "win_details"
+},
+
+"#menu_item_delete" : {
+	icon: "/images/ic_action_discard.png",
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+
+"#menu_item_edit" : {
+	icon:"/images/ic_action_edit.png",
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+
+"#rightNavBar" : {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent"
+},
+
+"#delete_game" : {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	backgroundImage: "/images/trash.png"
+},
+
+"#edit_game" : {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: 16,
+	backgroundImage: "/images/edit.png"
+},
+
+"#image_view_photo_game" : {
+	image: "/images/img_default.png",
+	width: "200dp",
+	height: "200dp"
+},
+
+"#image_view_photo_game[platform=ios]"  : {
+	borderRadius: "100dp"
+},
+
+"#view_details" : {
+	top: "70dp"
+},
+
+"Label" : {
+	top: "10dp"
+},
+
+"#label_select_game" : {
+	text: L("details_select_game")
+}

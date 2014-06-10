@@ -1,0 +1,90 @@
+"View" : {
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "black",
+	text: L("label_title")
+},
+
+"ListItem": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+},
+
+"ListItem[platform=ios]": {
+	canEdit: true
+},
+
+"#win_index": {
+	titleid: "win_heroes_title",
+	exitOnClose: true
+},
+
+"#add":{
+	systemButton: Ti.UI.iPhone.SystemButton.ADD
+},
+
+"#list_view_games" : {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	separatorInsets: {
+	    left: 10,
+	    right: 10
+	}
+},
+
+"#name": {
+	top: "2dp",
+	left: "5dp",
+	right: "5dp",
+	font: {
+		fontSize: "24dp"
+	}
+},
+
+"#year_release": {
+	font: {
+		fontSize: "14dp"
+	},
+	left: "5dp"
+},
+
+"#split_window" : {
+	backgroundColor: "white",
+	showMasterInPortrait: true
+},
+
+"#item_container":{
+	layout: "horizontal",
+	width: "95%",
+	height: Ti.UI.SIZE,
+	top:"10dp",
+	bottom:"10dp"
+},
+
+"#image_view_game" : {
+	width: "40dp",
+	height: "40dp"
+},
+
+"#image_view_game[platform=ios]" : {
+	borderRadius:"20dp"
+},
+
+"#view_details" : {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/ic_action_next_item.png",
+	right: "1dp"
+},
+
+"#menuItem" : {
+	title: "Add",
+	icon: "/images/ic_action_new.png",
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+}

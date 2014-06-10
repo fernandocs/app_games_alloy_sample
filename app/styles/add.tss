@@ -1,0 +1,86 @@
+"View": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: "composite",
+	top: "16dp",
+	left: "16dp",
+	right: "16dp"
+},
+
+"Popover": {
+	title: L("win_add_title"),
+	width: "480dp",
+	height: "300dp",
+},
+
+"TextField" : {
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	top: "16dp",
+	left: "16dp",
+	right: "16dp",
+	color: "black"
+},
+
+"#menu_item_save[platform=android]" : {
+	icon:"/images/ic_action_save.png",
+	showAsAction:Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+
+"#view_popover_container" : {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	top: 0,
+	left: 0,
+	right: 0,
+	layout: "horizontal"
+}
+
+"#container" : {
+  title: L("win_add_title"),
+  backButtonTitle: ""
+},
+
+"#image_view_photo_game" : {
+	backgroundImage: "/images/img_default.png",
+	width: "200dp",
+	height: "200dp",
+	autorotate: true
+},
+
+"#image_view_photo_game[platform=ios]" : {
+	borderRadius: "100dp"
+},
+
+"#image_view_photo_game[platform=ios formFactor=tablet]" : {
+	top: "16dp",
+	left: "16dp"
+},
+
+"TextField[platform=ios formFactor=tablet]" : {
+	width: 200,
+	height: Ti.UI.SIZE
+},
+
+"#text_field_name" : {
+	hintText: L("text_field_name")
+},
+
+"#text_field_year_of_release" : {
+	hintText: L("text_field_year_of_release"),
+	keyboardType : Titanium.UI.KEYBOARD_NUMBER_PAD
+}
+
+"#save[platform=ios formFactor=handheld]" : { 
+	systemButton: Ti.UI.iPhone.SystemButton.SAVE
+},
+
+"#save[platform=ios formFactor=tablet]" : {
+	top: "16dp",
+	title: L("button_save")
+}
+
+"#save[platform=android]" : {
+	title: L("button_save")
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="win_heroes_title">Meus Jogos</string>
+	<string name="win_details">Detalhes</string>
+	<string name="label_title">IOS</string>
+	
+	<string name="win_add_title">Adicionar Jogo</string>
+	<string name="win_edit_title">Editar Jogo</string>
+	<string name="text_field_name">Nome</string>
+	<string name="text_field_year_of_release">Ano de Lançamento</string>
+	<string name="button_save">Salvar</string>
+	
+	<!-- Details -->
+	<string name="details_select_game">Selecione um jogo na sua lista</string>
+	
+	<!-- Global-->
+	<string name="name">Nome</string>
+	<string name="year">Ano</string>
+	
+	<string name="save_success">Jogo Salvo Com Sucesso</string>
+	
+	<!-- Errors -->
+	<string name="error_no_name">Digite um nome</string>
+	<string name="error_no_image">Escolha uma imagem</string>
+	<string name="error_no_year_release">Ano inválido</string>
+</resources>

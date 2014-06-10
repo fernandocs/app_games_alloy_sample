@@ -1,0 +1,91 @@
+<Alloy>
+	<Collection src="game" />
+	<!-- iPad -->
+	<SplitWindow id="split_window" platform="ios" formFactor="tablet">
+        <!-- First window is the masterView -->
+        <NavigationWindow id="navGroup" platform="ios" formFactor="tablet">
+        	<Window id="win_index">
+				<RightNavButton platform="ios">
+	                <Button id="add" onClick="add"/>
+	            </RightNavButton>
+				<ListView id="list_view_games" defaultItemTemplate="template" onItemclick="gameDetails" onDelete="gameDelete">
+			    	<Templates>
+			    		<ItemTemplate id="template" name="template" id="row">
+			    			<View id="item_container" >
+				    			<ImageView id="image_view_game" bindId="image"/>
+								<View>
+									<Label id="name" bindId="name"/>
+									<Label id="year_release" bindId="year"/>
+								</View>
+							</View>
+							<ImageView id="view_details"/>
+			    		</ItemTemplate>
+			    	</Templates>
+			    	
+			    	<ListSection id="section" dataCollection="game" dataTransform="transform">
+			    		<ListItem itemId="{alloy_id}" image:image="{image}" name:text="{name}" year:text="{year_release}"/>
+			    	</ListSection>
+			    </ListView>
+			</Window>
+        </NavigationWindow>
+
+        <!-- Second window is the detailView -->
+		<NavigationWindow id="navGroupSecond" platform="ios" formFactor="tablet">
+			<Require src="details" id="details"/>
+		</NavigationWindow>
+    </SplitWindow>
+	
+	<!-- IOS -->
+	<NavigationWindow id="navGroup" platform="ios" formFactor="handheld">
+		<Window id="win_index">
+			<RightNavButton platform="ios">
+                <Button id="add" onClick="add"/>
+            </RightNavButton>
+            
+            <ListView id="list_view_games" defaultItemTemplate="template" onItemclick="gameDetails" onDelete="gameDelete">
+		    	<Templates>
+		    		<ItemTemplate id="template" name="template" id="row">
+		    			<View id="item_container">
+			    			<ImageView id="image_view_game" bindId="image"/>
+							<View>
+								<Label id="name" bindId="name"/>
+								<Label id="year_release" bindId="year" />
+							</View>
+						</View>
+						<ImageView id="view_details"/>
+		    		</ItemTemplate>
+		    	</Templates>
+		    	
+		    	<ListSection id="section" dataCollection="game" dataTransform="transform">
+		    		<ListItem itemId="{alloy_id}" image:image="{image}" name:text="{name}" year:text="{year_release}"/>
+		    	</ListSection>
+		    </ListView>
+		</Window>
+	</NavigationWindow>
+	
+	<!-- ANDROID -->
+	<Window id="win_index" platform="android">
+		<Menu id="menu" platform="android">
+	        <MenuItem id="menuItem" onClick="add" />
+	    </Menu>
+        
+	    <ListView id="list_view_games" defaultItemTemplate="template" onItemclick="gameDetails">
+	    	<Templates>
+	    		<ItemTemplate id="template" name="template" id="row" >
+	    			<View id="item_container">
+		    			<ImageView id="image_view_game" bindId="image" />
+						<View>
+							<Label id="name" bindId="name" />
+							<Label id="year_release" bindId="year" />
+						</View>
+					</View>
+					<ImageView id="view_details"/>
+	    		</ItemTemplate>
+	    	</Templates>
+	    	
+	    	<ListSection id="section" dataCollection="game" dataTransform="transform">
+	    		<ListItem itemId="{alloy_id}" image:image="{image}" name:text="{name}" year:text="{year_release}"/>
+	    	</ListSection>
+	    </ListView>
+	</Window>
+</Alloy>

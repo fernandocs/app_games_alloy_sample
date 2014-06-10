@@ -1,0 +1,42 @@
+<Alloy>
+	<!-- IPHONE -->
+	<Window id="container" platform="ios" formFactor="handheld">
+		<RightNavButton platform="ios">
+            <Button id="save" onClick="save"/>
+        </RightNavButton>
+		<ScrollView layout="vertical">
+			<View>
+				<ImageView id="image_view_photo_game" onClick="getPhoto"/>
+			</View>
+			<TextField id="text_field_name" />
+			<TextField id="text_field_year_of_release" />
+		</ScrollView>
+	</Window>
+	
+	<!-- ANDROID -->
+	<Window id="container" platform="android">
+        <Menu id="menu_save" platform="android">
+	        <MenuItem id="menu_item_save" onClick="save" />
+	    </Menu> 
+		<ScrollView layout="vertical">
+			<View>
+				<ImageView id="image_view_photo_game" onClick="getPhoto"/>
+			</View>
+			<TextField id="text_field_name" />
+			<TextField id="text_field_year_of_release" />
+		</ScrollView>
+	</Window>
+	
+	<!-- IPAD -->
+	<Popover id="popover" platform="ios" formFactor="tablet">
+		<View id="view_popover_container" platform="ios" formFactor="tablet">
+			<ImageView id="image_view_photo_game" onClick="getPhoto"/>
+			<View layout="vertical">
+				<TextField id="text_field_name"/>
+				<TextField id="text_field_year_of_release" />
+				<Button id="save" onClick="save"/>
+			</View>
+		</View>
+	</Popover>
+	
+</Alloy>

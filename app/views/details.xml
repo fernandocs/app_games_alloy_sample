@@ -1,0 +1,20 @@
+<Alloy>
+	<Window backButtonTitle="" titleid="win_details" onFocus="focus">
+		<Menu id="menu_details" platform="android">
+	        <MenuItem id="menu_item_delete" onClick="deleteGame" />
+	        <MenuItem id="menu_item_edit" onClick="editGame" />
+	    </Menu>
+	    <RightNavButton platform="ios">
+	    	<View id="rightNavBar">
+	            <Button id="delete_game" onClick="deleteGame" />
+	            <Button id="edit_game" onClick="editGame" />
+            </View>
+        </RightNavButton>
+		<Label id="label_select_game"/>
+		<View id="view_details" layout="vertical">
+			<ImageView id="image_view_photo_game"/>
+			<Label id="label_field_name"/>
+			<Label id="label_year_of_release"/>
+		</View>
+    </Window>
+</Alloy>
