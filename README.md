@@ -6,7 +6,7 @@ This application demonstration how to use the Alloy in your project.
 
 Use ListView, Popover, SplitWindow, NavigationWindow, ActionBar, MenuItem, ImageView
 
-## ScreenShot
+## ScreenShots
 ![ScreenShot](https://raw.githubusercontent.com/fernandocs/app_games_alloy_sample/master/Screens/iphone_list_view_empty.png)
 ![ScreenShot](https://raw.githubusercontent.com/fernandocs/app_games_alloy_sample/master/Screens/iphone_add_game.png)
 ![ScreenShot](https://raw.githubusercontent.com/fernandocs/app_games_alloy_sample/master/Screens/iphone_list_view_not_empty.png)
